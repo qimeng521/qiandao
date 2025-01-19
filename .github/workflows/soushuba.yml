@@ -4,8 +4,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
-    - cron: '16 0 * * *'
+   # 每天的 03:00 CST（19:00 UTC）
+    - cron: '0 19 * * *'
+    # 每天的 04:00 CST（20:00 UTC）
+    - cron: '0 20 * * *'
     
 
 jobs:
